@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsHello.ConfigPage"
+             Title="Configuration">
+    <ContentPage.Content>
+        <TableView>
+            <TableView.Root>
+                <TableSection Title="Privacy">
+                    <SwitchCell Text="Track Location" On="{Binding Track}" />
+                    <SwitchCell Text="Allow Cookies" On="{Binding Cookies}" />
+                </TableSection>
+                <TableSection Title="Performance">
+                    <SwitchCell Text="Show on board" On="{Binding Board}"/>
+                    <SwitchCell Text="Send to email" On="{Binding Email}" />
+                    <SwitchCell Text="Receive SMS" On="{Binding Sms}"/>
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

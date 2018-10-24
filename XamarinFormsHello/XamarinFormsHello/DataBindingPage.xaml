@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsHello.DataBindingPage">
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout x:Name="panelStudent">
+            <Label Text="{Binding Name}"></Label>
+            <Label Text="{Binding Email}"></Label>
+        </StackLayout>
+        <StackLayout x:Name="panelProfessor">
+            <Label Text="{Binding Name}"></Label>
+            <Label Text="{Binding Course}"></Label>
+        </StackLayout>
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

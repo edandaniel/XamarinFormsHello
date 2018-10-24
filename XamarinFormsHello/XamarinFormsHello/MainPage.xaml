@@ -4,11 +4,19 @@
              xmlns:local="clr-namespace:XamarinFormsHello"
              x:Class="XamarinFormsHello.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Padding="30" Spacing="10">
+        <Label Text="Hello, Xamarin.Forms" FontAttributes="Bold" FontFamily="Arial" FontSize="25" />
+        <Entry Placeholder="Entre com seu nome" x:Name="txtTexto" />
+        <Button Text="Click here" Clicked="ClicarNomeBotao" />
+        <StackLayout HorizontalOptions="Center">
+            <Button Text="Home" x:Name="btnHome"
+                        Clicked="btnHome_Clicked" />
+            <Button Text="Configurar" x:Name="btnConfig"
+                        Clicked="btnConfig_Clicked" />
+            <Button x:Name="btnConteudo" Text="Content" 
+                        Clicked="btnConteudo_Clicked" />
+            <Button x:Name="btnDataBinding" Text="Student" 
+                        Clicked="btnDataBinding_Clicked" />
+        </StackLayout>
     </StackLayout>
-
 </ContentPage>

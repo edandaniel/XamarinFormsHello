@@ -7,11 +7,12 @@ namespace XamarinFormsHello
 {
 	public partial class App : Application
 	{
+        public static MyConfiguration ConfigVM { get; set; }
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new MainPage();
+            if (ConfigVM == null) ConfigVM = new MyConfiguration();
+			MainPage = new NavigationPage( new MainPage());
 		}
 
 		protected override void OnStart ()
